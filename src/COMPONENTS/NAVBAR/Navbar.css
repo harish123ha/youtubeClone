@@ -1,0 +1,35 @@
+.navbar {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  border: 1px solid #ccc;
+  padding: 3px 12px;
+  border-radius: 22px;
+}
+.search-bar input {
+  border: transparent;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+.search-bar img {
+  padding: 3px 3px;
+  border-radius: 15px;
+
+  cursor: pointer;
+}
+.search-bar img:hover {
+  background-color: #f7f7f7;
+}
+@media (max-width: 900px) {
+  .hide {
+    display: none;
+  }
+}
+
+/* @media (max-width: 900px) {
+  .hide2 {
+    display: none;
+  }
+} */

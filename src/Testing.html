@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const apikey = "AIzaSyCKtNFQbfmHRF4VcqfXmklFnHiJJp7pkMk";
+      const url = `https://www.googleapis.com/youtube/v3/videos&key&${apikey}`;
+      const URL = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=20&key=${apikey}`;
+      const urll = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2Cstatus%2Clocalizations&key=${apikey}`;
+
+      const fetchData = async () => {
+        let response = await fetch(URL);
+        let jsonResponse = await response.json();
+        console.log(jsonResponse);
+        // setJokes({ jokeContent: jsonResponse.jokeContent });
+      };
+      fetchData();
+    </script>
+  </body>
+</html>

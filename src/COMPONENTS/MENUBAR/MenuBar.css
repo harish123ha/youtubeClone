@@ -1,0 +1,28 @@
+.menu_width {
+  width: 12rem;
+}
+
+.small_menu_width {
+  max-width: 5%;
+}
+.small_menu_width h3 {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .flex h3 {
+    display: none;
+  }
+  .menu_width {
+    width: 5%;
+  }
+}
+
+@media (max-width: 1073px) {
+  .small-size1 {
+    font-size: 1rem;
+  }
+  .small-size2 {
+    font-size: 0.9rem;
+  }
+}
